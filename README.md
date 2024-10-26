@@ -39,33 +39,33 @@ src
 7.package.json: Contains the project dependencies and scripts.
 
 # Tech Stack
-React: JavaScript library for building user interfaces
-OpenWeather API: Real-time weather data provider
-CSS (Flexbox): For responsive styling and layout
-JavaScript: Application logic
-Axios: HTTP client for API requests
-LocalStorage: Storing recent searches for quick access
-GIF Background: Enhances the UI using dynamic animated backgrounds based on weather conditions
+         React-> JavaScript library for building user interfaces
+         OpenWeather API-> Real-time weather data provider
+         CSS (Flexbox)-> For responsive styling and layout
+        JavaScript-> Application logic
+        Axios-> HTTP client for API requests
+        LocalStorage-> Storing recent searches for quick access
+        GIF Background-> Enhances the UI using dynamic animated backgrounds based on weather conditions
 
 # Features
-      Current Weather: Displays temperature, weather conditions, humidity, and wind speed for the user's current location or any searched city.
-     Custom Weather Icons: Custom icons that reflect weather conditions, with a fallback to OpenWeather icons.
-    Recent Searches: Displays recent city searches in a scrollable list for quick access.
-     Daily Weather Summary: Shows the average, max, and min temperature for the day, along with the dominant weather condition.
-     Weather Alerts: Alerts for temperatures exceeding a specified threshold.
-    GIF Background: A dynamic and visually appealing animated background enhances the app's UI, adjusting based on weather conditions.
-    Responsive Design: App layout adjusts seamlessly across all devices using CSS Flexbox. The application is optimized for both short screens and large displays, ensuring 
-                    a user-friendly experience regardless of device size.
+      Current Weather-> Displays temperature, weather conditions, humidity, and wind speed for the user's current location or any searched city.
+      Custom Weather Icons-> Custom icons that reflect weather conditions, with a fallback to OpenWeather icons.
+      Recent Searches-> Displays recent city searches in a scrollable list for quick access.
+      Daily Weather Summary-> Shows the average, max, and min temperature for the day, along with the dominant weather condition.
+      Weather Alerts-> Alerts for temperatures exceeding a specified threshold.
+      GIF Background-> A dynamic and visually appealing animated background enhances the app's UI, adjusting based on weather conditions.
+     Responsive Design-> App layout adjusts seamlessly across all devices using CSS Flexbox. The application is optimized for both short screens and large displays,ensuring 
+               a user-friendly experience regardless of device size.
 
 
 # Application Flow
-Weather Data Fetching: Weather data is fetched from the OpenWeather API for the current location or any city searched by the user.
-City Search with Suggestions: The search bar provides real-time suggestions based on input.
-Weather Card: Displays temperature, wind speed, and weather condition for the selected city.
-Recent Searches: Keeps track of recent city searches and allows users to reselect them.
-Daily Weather Summary: Shows the weather summary, including temperature details and conditions for the entire day.
-Custom Icons: Custom icons for each weather condition are rendered. If the icon isn't available, it defaults to OpenWeather icons.
-GIF Background: Provides a dynamic atmosphere to the app based on weather, enhancing the user experience.
+     Weather Data Fetching-> Weather data is fetched from the OpenWeather API for the current location or any city searched by the user.
+     City Search with Suggestions-> The search bar provides real-time suggestions based on input.
+     Weather Card-> Displays temperature, wind speed, and weather condition for the selected city.
+     Recent Searches-> Keeps track of recent city searches and allows users to reselect them.
+     Daily Weather Summary-> Shows the weather summary, including temperature details and conditions for the entire day.
+     Custom Icons-> Custom icons for each weather condition are rendered. If the icon isn't available, it defaults to OpenWeather icons.
+     GIF Background-> Provides a dynamic atmosphere to the app based on weather, enhancing the user experience.
 
 
 # Screenshots:
@@ -97,10 +97,10 @@ npm start
 
 
 # Usage
-Search for Weather: Type a city name in the search bar and view the weather conditions.
-Current Location: Allow location access to see weather data for your current position.
-Recent Searches: Quickly view weather for previously searched cities.
-Toggle Daily Summary: Switch to the daily summary for average, max, and min temperatures.
+    Search for Weather-> Type a city name in the search bar and view the weather conditions.
+    Current Location-> Allow location access to see weather data for your current position.
+    Recent Searches-> Quickly view weather for previously searched cities.
+    Toggle Daily Summary-> Switch to the daily summary for average, max, and min temperatures.
 
 
 # Responsive Design
