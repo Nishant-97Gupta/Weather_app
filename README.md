@@ -1,70 +1,116 @@
-# Getting Started with Create React App
+# Weather Monitoring Application 🌤️
+This is a fully functional Weather Monitoring App that allows users to search for weather information of different cities and view their current weather, daily weather summary, and recent searches. The app dynamically adjusts based on real-time weather conditions, displaying customized weather icons and providing a responsive, user-friendly interface with an engaging GIF background.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Table of Contents
+Folder Structure
+Tech Stack
+Features
+Application Flow
+Screenshots
+Installation
+Usage
+Responsive Design
+Future Enhancements
 
-## Available Scripts
 
-In the project directory, you can run:
+# Folder Structure
+/weather_app
+├── /public
+│   ├── index.html
+│   ├── /icons                # Custom weather icons based on condition codes (e.g., 01d.png, 02n.png)
+│   ├── /backgrounds          # Background images including the GIF used for weather visualization
+│   ├── /screenshots          # Screenshots for documentation
+│   └── /xa.gif               # GIF background to enhance UI
+├── /src
+│   ├── /api
+│   │   └── weatherApi.js     # API calls to OpenWeather
+│   ├── /components           # React components
+│   │   ├── WeatherCard.js    # Displays current weather
+│   │   ├── SearchBar.js      # Search bar for weather search by city
+│   │   └── DailyWeatherSummary.js # Displays daily weather summary
+│   ├── /hooks
+│   │   └── useWeatherData.js # Custom hook to fetch weather data
+│   ├── /style
+│   │   ├── WeatherCard.css   # Weather card styling
+│   │   ├── SearchBar.css     # Search bar styling
+│   │   └── styles.css        # Global app styling
+├── App.js                    # Main app component
+├── index.js                  # Entry point for the React app
+└── package.json              # Project dependencies and scripts
 
-### `npm start`
+Tech Stack
+React: JavaScript library for building user interfaces
+OpenWeather API: Real-time weather data provider
+CSS (Flexbox): For responsive styling and layout
+JavaScript: Application logic
+Axios: HTTP client for API requests
+LocalStorage: Storing recent searches for quick access
+GIF Background: Enhances the UI using dynamic animated backgrounds based on weather conditions
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+# Features
+Current Weather: Displays temperature, weather conditions, humidity, and wind speed for the user's current location or any searched city.
+Custom Weather Icons: Custom icons that reflect weather conditions, with a fallback to OpenWeather icons.
+Recent Searches: Displays recent city searches in a scrollable list for quick access.
+Daily Weather Summary: Shows the average, max, and min temperature for the day, along with the dominant weather condition.
+Weather Alerts: Alerts for temperatures exceeding a specified threshold.
+GIF Background: A dynamic and visually appealing animated background enhances the app's UI, adjusting based on weather conditions.
+Responsive Design: App layout adjusts seamlessly across all devices using CSS Flexbox. The application is optimized for both short screens and large displays, ensuring a user-friendly experience regardless of device size.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+# Application Flow
+Weather Data Fetching: Weather data is fetched from the OpenWeather API for the current location or any city searched by the user.
+City Search with Suggestions: The search bar provides real-time suggestions based on input.
+Weather Card: Displays temperature, wind speed, and weather condition for the selected city.
+Recent Searches: Keeps track of recent city searches and allows users to reselect them.
+Daily Weather Summary: Shows the weather summary, including temperature details and conditions for the entire day.
+Custom Icons: Custom icons for each weather condition are rendered. If the icon isn't available, it defaults to OpenWeather icons.
+GIF Background: Provides a dynamic atmosphere to the app based on weather, enhancing the user experience.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+# Screenshots:
+ 1. Main Weather Display
+![Main Weather Display](public/screenshots/main-weather-display.png)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+ 2. City Search Functionality
+![City Search](public/screenshots/city-search.png)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+ 3. Daily Weather Summary
+![Daily Weather Summary](public/screenshots/daily-summary.png)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+ 5. Responsive Layout
+![Responsive Layout](public/screenshots/responsive-layout.png)
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+# Installation
+Clone the repository:
+git clone https://github.com/Nishant-97Gupta/Weather_app.git
+cd weather_app
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+# Install the dependencies:
+npm install
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+# Run the app
+npm start
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+# Open the app in your browser at http://localhost:3000.
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+# Usage
+Search for Weather: Type a city name in the search bar and view the weather conditions.
+Current Location: Allow location access to see weather data for your current position.
+Recent Searches: Quickly view weather for previously searched cities.
+Toggle Daily Summary: Switch to the daily summary for average, max, and min temperatures.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
+# Responsive Design
+The app is fully responsive, adjusting its layout dynamically using CSS Flexbox to cater to different screen sizes, including short screens. The app ensures a seamless experience on mobile devices, tablets, and desktops:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Flexbox is utilized to handle layouts, ensuring components resize proportionally to the viewport.
+Weather cards, search bars, and other UI components are flexed to adapt smoothly to different screen dimensions, making the app scalable across devices.
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+# Future Enhancements
+Push notifications for weather alerts.
+Enhanced daily weather history tracking.
+Additional weather data providers for richer insights.
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
