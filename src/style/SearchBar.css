@@ -1,0 +1,131 @@
+.search-bar-container {
+  position: absolute;
+  right: 5%;
+  top: 5%;
+  width: 30%;
+  height: 60vh;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.search-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.search-input {
+  flex: 1;
+  background-color: transparent;
+  text-decoration: white;
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid rgb(237, 226, 226);
+  font-size: 1.5vw;
+  color: white;
+}
+
+.search-input::placeholder {
+  color: rgb(195, 189, 189); 
+}
+
+.search-btn {
+  width: 25%;
+  background-color: transparent;
+  color: rgb(19, 18, 18);
+  border: none;
+  padding: 8px 10px;
+  border-radius: 5px;
+  font-size: 1.2vw;
+  cursor: pointer;
+}
+
+.search-btn:hover {
+  background-color: gray;
+}
+
+.suggestions-list {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 10px;
+  max-height: 150px;
+  overflow-y: auto;
+  border: 1px solid rgb(84, 76, 76);
+  background-color: transparent;
+}
+
+.suggestions-list li {
+  padding: 10px;
+  font-size: 1.2vw;
+  cursor: pointer;
+}
+
+.suggestions-list li:hover {
+  background-color: rgb(153, 138, 112);
+}
+
+.recent-searches {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  flex-grow: 1;
+  overflow: hidden;
+}
+
+.recent-searches h3 {
+  position: relative;
+  margin-bottom: 10px;
+  color: #333;
+  font-size: 2vw;
+  text-align: left;
+  flex-shrink: 0;
+  border-bottom: 2px solid black; /* Added underline */
+  padding-bottom: 5px;
+}
+
+.recent-searches ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  overflow-y: auto;
+  flex-grow: 1;
+  max-height: 150px; 
+}
+
+.recent-searches ul li {
+  display: flex;
+  align-items: center;
+  padding: 5px 0;
+  color: black;
+  font-size: 1.5vw;
+  cursor: pointer;
+}
+
+.recent-searches ul li:hover {
+  background-color: transparent;
+  color: white;
+}
+
+.error-message {
+  color: red;
+  font-size: 1.2vw;
+  margin-top: 10px;
+}
+
+.toggle-summary-text {
+  margin-top: auto;
+  color: #dfe3e8;
+  cursor: pointer;
+  font-size: 1.5vw;
+  text-align: center;
+  padding-top: 10px;
+}
+
+.toggle-summary-text:hover {
+  color: #0e0e0f;
+}
