@@ -13,32 +13,32 @@ Responsive Design
 Future Enhancements
 
 
-# Folder Structure
-/weather_app
-├── /public
-│   ├── index.html
-│   ├── /icons                # Custom weather icons based on condition codes (e.g., 01d.png, 02n.png)
-│   ├── /backgrounds          # Background images including the GIF used for weather visualization
-│   ├── /screenshots          # Screenshots for documentation
-│   └── /xa.gif               # GIF background to enhance UI
-├── /src
-│   ├── /api
-│   │   └── weatherApi.js     # API calls to OpenWeather
-│   ├── /components           # React components
-│   │   ├── WeatherCard.js    # Displays current weather
-│   │   ├── SearchBar.js      # Search bar for weather search by city
-│   │   └── DailyWeatherSummary.js # Displays daily weather summary
-│   ├── /hooks
-│   │   └── useWeatherData.js # Custom hook to fetch weather data
-│   ├── /style
-│   │   ├── WeatherCard.css   # Weather card styling
-│   │   ├── SearchBar.css     # Search bar styling
-│   │   └── styles.css        # Global app styling
-├── App.js                    # Main app component
-├── index.js                  # Entry point for the React app
-└── package.json              # Project dependencies and scripts
+# Folder Structure:
 
-Tech Stack
+public folder
+1.index.html
+2.Icons for weather conditions (e.g., 01d.png, 02n.png)
+3.Background images including a GIF used for weather visualization
+4.Screenshots for documentation
+5.xa.gif - a GIF background for enhanced UI
+
+
+src
+1.api: Contains weatherApi.js for API calls to OpenWeather.
+2.components: Holds React components:
+     a.WeatherCard.js: Displays the current weather.
+     b.SearchBar.js: Provides the search functionality for weather information by city.
+     c.DailyWeatherSummary.js: Displays a summary of daily weather data.
+3.hooks: Contains useWeatherData.js, a custom hook to fetch weather data.
+4.style: Holds the styling files:
+      a.WeatherCard.css: Styling for the weather card.
+      b.SearchBar.css: Styling for the search bar.
+     c.styles.css: Global styles for the entire application.
+5.App.js: The main component that brings everything together.
+6.index.js: The entry point for the React app.
+7.package.json: Contains the project dependencies and scripts.
+
+# Tech Stack
 React: JavaScript library for building user interfaces
 OpenWeather API: Real-time weather data provider
 CSS (Flexbox): For responsive styling and layout
