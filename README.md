@@ -83,17 +83,17 @@ src
 
 
 # Installation
-Clone the repository:
+Clone the repository->
 git clone https://github.com/Nishant-97Gupta/Weather_app.git
 cd weather_app
 
-# Install the dependencies:
+ Install the dependencies->
 npm install
 
-# Run the app
+ Run the app->
 npm start
 
-# Open the app in your browser at http://localhost:3000.
+ Open the app in your browser at http://localhost:3000.
 
 
 # Usage
@@ -111,7 +111,7 @@ Weather cards, search bars, and other UI components are flexed to adapt smoothly
 
 
 # Future Enhancements
-Push notifications for weather alerts.
-Enhanced daily weather history tracking.
-Additional weather data providers for richer insights.
+    1.Push notifications for weather alerts.
+    2.Enhanced daily weather history tracking.
+    3.Additional weather data providers for richer insights.
 
