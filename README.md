@@ -48,13 +48,14 @@ LocalStorage: Storing recent searches for quick access
 GIF Background: Enhances the UI using dynamic animated backgrounds based on weather conditions
 
 # Features
-Current Weather: Displays temperature, weather conditions, humidity, and wind speed for the user's current location or any searched city.
-Custom Weather Icons: Custom icons that reflect weather conditions, with a fallback to OpenWeather icons.
-Recent Searches: Displays recent city searches in a scrollable list for quick access.
-Daily Weather Summary: Shows the average, max, and min temperature for the day, along with the dominant weather condition.
-Weather Alerts: Alerts for temperatures exceeding a specified threshold.
-GIF Background: A dynamic and visually appealing animated background enhances the app's UI, adjusting based on weather conditions.
-Responsive Design: App layout adjusts seamlessly across all devices using CSS Flexbox. The application is optimized for both short screens and large displays, ensuring a user-friendly experience regardless of device size.
+      Current Weather: Displays temperature, weather conditions, humidity, and wind speed for the user's current location or any searched city.
+     Custom Weather Icons: Custom icons that reflect weather conditions, with a fallback to OpenWeather icons.
+    Recent Searches: Displays recent city searches in a scrollable list for quick access.
+     Daily Weather Summary: Shows the average, max, and min temperature for the day, along with the dominant weather condition.
+     Weather Alerts: Alerts for temperatures exceeding a specified threshold.
+    GIF Background: A dynamic and visually appealing animated background enhances the app's UI, adjusting based on weather conditions.
+    Responsive Design: App layout adjusts seamlessly across all devices using CSS Flexbox. The application is optimized for both short screens and large displays, ensuring 
+                    a user-friendly experience regardless of device size.
 
 
 # Application Flow
