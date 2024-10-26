@@ -2,14 +2,14 @@
 This is a fully functional Weather Monitoring App that allows users to search for weather information of different cities and view their current weather, daily weather summary, and recent searches. The app dynamically adjusts based on real-time weather conditions, displaying customized weather icons and providing a responsive, user-friendly interface with an engaging GIF background.
 
 # Table of Contents
-Folder Structure
-Tech Stack
-Features
-Application Flow
-Screenshots
-Installation
-Usage
-Responsive Design
+Folder Structure,
+Tech Stack,
+Features,
+Application Flow,
+Screenshots,
+Installation,
+Usage,
+Responsive Design,
 Future Enhancements
 
 
@@ -24,7 +24,7 @@ public folder
 
 
 src
-1.api: Contains weatherApi.js for API calls to OpenWeather.
+   1.api: Contains weatherApi.js for API calls to OpenWeather.
 2.components: Holds React components:
      a.WeatherCard.js: Displays the current weather.
      b.SearchBar.js: Provides the search functionality for weather information by city.
